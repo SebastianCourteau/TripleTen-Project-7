@@ -6,7 +6,7 @@ const requestBody = {
 		"name": "Test"
 }
 
-test('Verify that changing the kit name returns successful response code', async () => {
+test('should return status code 200 when changing kit name', async () => {
 	let statusCode
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/6`, {
@@ -23,7 +23,7 @@ test('Verify that changing the kit name returns successful response code', async
 	expect(statusCode).toBe(200);
 });
 
-test('Verify that changing the kit name returns in response body "ok: true"', async () => {
+test('Should return ok true in response body when changing kit name"', async () => {
 	let responseBody
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/6`, {

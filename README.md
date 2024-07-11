@@ -4,7 +4,47 @@ The project contains various api tests ensuring that they function properly. All
 The files consist of DELETE,GET,POST & PUT requests.
 Each method contains two tests and both tests are saved within their respective file.
 
-The documentation source used was apiDoc.
+The purpose of this project is to verify that various API request methods correctly function as expected through tests ran with the framework Jest in the VS code terminal.
+
+--Downloading the projects depedencies:
+
+        Firstly, you will want to link your GitHub account to TripleTen by clicking the "Link GitHub account" button in the widget at the top of the project 7 description page.
+            Next you will want to clone the repository to your computer to work with it locally. Doing this entails:
+            1. opening the terminal on your computer (Git Bash if you are on windows) .
+            2. Next you create a directory to store this project and any future projects we may have by entering cd ~, mkdir projects, cd projects. 
+            3. You will want to clone the repository at this point by entering into your console git clone git@github.com:username/hm07-qa-us.git(for ssh authentication users) or git clone https://github.com/username/hm07-qa-us.git(for https authentication users) you will want to replace "username" in the command with your GitHub username.
+            4. You can now work with the project locally on your computer. Once inside of your project folder you will want to run npm install.
+
+--Setting the URL:
+
+        First you will to click the "Start" button on the TripleTen project 7 description page.
+            Next you will want to copy this URL.
+                Lastly you will want to paste the copied URL in the config.js file within the project folder.
+                    Make sure that you past the URL between the double quotation marks after the variable API_URL:.
+
+
+
+--The documentation source used was apiDoc.
+    
+    To access apiDoc you will want to copy the forementioned TripleTen project 7 description page URL and place this in your broswer address bar
+        You will then add after the pasted URL /docs/ and enter the full address. This will take you to apiDocs where we have our documentation.
+
+--Running the test suite:
+
+    (In order to run the test suite properly you must have already written a test within the respective file for each method.)
+        There are two ways to running your tests. Individually by file name or all together at once.
+
+            To run a test by its individual file (Leaving the rest of the tests out of it):
+                You will click the fourth button down from the file explorer in VScode(This buttons symbol is a play button with an insect on the bottom left)
+                    You will then select "JavaScript Debug Terminal" (OR you can drag the bottom bar up and the terminal will appear this way)
+                        Once within the terminal you must enter the command "npx jest ./tests/"filename.js". npx jest is to call the jest framework and after this is the directory.
+                        This will run solely this individual file.
+
+    To run the entire test suite as a whole you must:
+        Follow the same forementioned steps for running an individual test obtaining the terminal within your VScode
+            The command entered to run the entire test suite will be "npx jest" Which calls on the jest framework to run the entire test suite conjunctively
+
+
 
 DELETE:
 

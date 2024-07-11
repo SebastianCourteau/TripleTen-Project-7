@@ -6,7 +6,7 @@ const requestBody = {
     cardId: 6
 }
 
-test('Deleting kit results in successful response code', async () => {
+test('should return in response status code 200 when deleting a kit', async () => {
     let statusCode;
     try {
         const postResponse = await fetch(`${config.API_URL}/api/v1/kits`, {
@@ -29,7 +29,7 @@ test('Deleting kit results in successful response code', async () => {
     expect(statusCode).toBe(200);
 });
 
-test('Deleting kit returns ok true in response', async () => {
+test('Should return ok true in response body when deleting kit', async () => {
     let responseBody;
     try {
         const postResponse = await fetch(`${config.API_URL}/api/v1/kits`, {

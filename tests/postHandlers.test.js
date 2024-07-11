@@ -19,7 +19,7 @@ const requestBody = {
     "deliveryTime": 7
 }
 
-test('Checking delivery cost returns successful status code', async () => {
+test('should return status code 200 when checking delvery time', async () => {
 	let statusCode
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/couriers/check`, {
@@ -36,7 +36,7 @@ test('Checking delivery cost returns successful status code', async () => {
 	expect(statusCode).toBe(200)
 });
 
-test('Checking delivery cost for speedy is 7', async () => {
+test('Should show Speedy delivery time as 7', async () => {
 	let speedyDeliveryCost
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/couriers/check`, {
